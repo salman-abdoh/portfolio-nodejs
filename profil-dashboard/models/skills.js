@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const schema =mongoose.Schema; 
 
 var skillsSchema = new schema({
-    id:{type:String,required:true},
     name:{ 
                 type:String,
                 required:true
@@ -13,7 +12,7 @@ var skillsSchema = new schema({
                 required:true,
             },
             date:{
-                type:Date,
+                type:String,
                 required:true,
             },
             place:{
